@@ -27,6 +27,19 @@ header,footer,nav,aside,main {
     border:1px dashed #303030;
 }
 
+h1 {
+    font-size:1.2em;
+    color:#303030;
+    font-weight: bold;
+    padding-bottom:10px;
+}
+
+p {
+    font-size:1em;
+    color:#303030;
+    font-weight: normal;
+}
+
 header {
     grid-column: 1/3;
     padding:10px;
@@ -49,7 +62,7 @@ header p {
     font-size:0.7em;
 }
 
-header a {
+header a, a:visited {
     color:#303030;
     text-decoration:underline;
 }
@@ -88,7 +101,7 @@ nav ul li {
     
 }
 
-nav a {
+nav a, a:visited {
     display:inline-block;
     padding:5px;
     background-color:#3A478F;
@@ -174,7 +187,7 @@ main {
     right:10px;
 }
 
-.odkazForm a, a:visited{
+.odkazForm a {
     color:rgb(204, 0, 51);
     text-decoration:none;
     font-size:8pt;
@@ -183,9 +196,17 @@ main {
 .odkazForm a:hover {
     text-decoration:underline;
 }
-.ctyrka img {
-    max-width: 20%;
+
+.ctyrka {
+    width:100%;
+    padding:100px;
 }
+
+.ctyrka img {
+    width: 49%;
+    margin:0 auto;
+}
+
 
 footer {
     grid-column: 1/3;
@@ -220,6 +241,7 @@ footer {
     color:#3A478F;
     text-decoration:underline;
 }
+
 @media screen and (max-width:768px) {
     body {
         max-width:100vw;
