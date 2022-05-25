@@ -67,13 +67,7 @@ nav {
     align-content: center;
     background-color: #EBEBEB;
     gap:2px;
-}
-
-@media screen and (min-width: 768px) {
-    nav {
-        justify-content: center;
-    }
-
+    justify-content: center;
 }
 
 nav ul li {
@@ -85,6 +79,13 @@ nav ul li {
 nav ul li {
     float:left;
 }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        text-align:center;
+    }
+    
 }
 
 nav a {
@@ -110,7 +111,7 @@ aside {
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
-    justify-content: center;
+
 }
 
 .asideItem img {
@@ -120,22 +121,70 @@ aside {
 }
 
 @media screen and (max-width: 768px) {
+
     aside {
         flex-direction:row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
     .asideItem img {
         margin:0px;
-        width:25%;
         border:1px solid #303030;
     }
 }
 
 main {
     grid-column: 1/2;
-    text-align:center;
     padding:10px;
 
+}
+
+.formular {
+    padding:10px;
+    font-family:sans-serif;
+    font-size:0.8em;
+    width:204px;
+    height:185px;
+    margin:20px;
+    border:none;
+    background-image: url("img/box.gif");
+}
+
+.formular legend {
+    position:relative;
+    top:-20px;
+    text-align:center;
+    font-size:12pt;
+    font-weight: bold;
+    font-family:Tahoma, sans-serif;
+    color: grey;
+}
+
+#mapa {
+    float:right;
+    position:relative;
+    left:-5px;
+    top:-5px;
+}
+.odkazForm {
+    text-align:right;
+    position:relative;
+    bottom:-40px;
+    right:10px;
+}
+
+.odkazForm a, a:visited{
+    color:rgb(204, 0, 51);
+    text-decoration:none;
+    font-size:8pt;
+}
+
+.odkazForm a:hover {
+    text-decoration:underline;
+}
+.ctyrka img {
+    max-width: 20%;
 }
 
 footer {
